@@ -1,0 +1,77 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="poolplayer.list">
+      <field name="name">poolplayer list</field>
+      <field name="model">poolplayer.poolplayer</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="dob"/>
+          <field name="gender"/>
+          <field name="country"/>
+          <field name="strongHand"/>
+          <field name="img" widget='image'/>
+          <field name="description"/>
+        </tree>
+      </field>
+    </record>
+
+<!-- <record id="my_model_form_view" model="ir.ui.view">
+    <field name="name">my.model.form.view</field>
+    <field name="model">poolplayer.poolplayer</field>
+    <field name="arch" type="xml">
+        <form>
+            <sheet>
+                <group>
+                    <field name="img" widget="image"/>
+                </group>
+            </sheet>
+        </form>
+    </field>
+</record> -->
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="poolplayer.action_window">
+      <field name="name">poolplayer window</field>
+      <field name="res_model">poolplayer.poolplayer</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- server action to the one above -->
+
+    <record model="ir.actions.server" id="poolplayer.action_server">
+      <field name="name">poolplayer server</field>
+      <field name="model_id" ref="model_poolplayer_poolplayer"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": poolplayer.poolplayer,
+        }
+      </field>
+    </record>
+
+
+    <!-- Top menu item -->
+
+    <menuitem name="poolplayer" id="poolplayer.menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Menu 1" id="poolplayer.menu_1" parent="poolplayer.menu_root"/>
+    <menuitem name="Menu 2" id="poolplayer.menu_2" parent="poolplayer.menu_root"/>
+
+    <!-- actions -->
+
+    <menuitem name="List" id="poolplayer.menu_1_list" parent="poolplayer.menu_1"
+              action="poolplayer.action_window"/>
+    <menuitem name="Server to list" id="poolplayer" parent="poolplayer.menu_2"
+              action="poolplayer.action_server"/>
+
+  </data>
+</odoo>

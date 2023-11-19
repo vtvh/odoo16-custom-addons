@@ -1,0 +1,30 @@
+<odoo>
+  <data>
+    <record id="object0" model="poolplayer.poolplayer">
+      <field name="name">Effren Reyes</field>
+      <field name="dob">1954-08-26</field>
+      <field name="gender">m</field>
+      <field name="country">Philippines</field>
+      <field name="strongHand">r</field>
+      <field name="description">Efren Manalang Reyes OLD PLH, popularly known by the nicknames "Bata" and "The Magician", is a Filipino professional pool player, who is widely regarded as the greatest pool player of all time. In 2003 he was inducted into the Billiard Congress of America's Hall of Fame.</field>
+    </record>
+    <record id="object1" model="poolplayer.poolplayer">
+      <field name="name">Joshua Filler</field>
+      <field name="dob">1997-10-02</field>
+      <field name="gender">m</field>
+      <field name="country">German</field>
+      <field name="strongHand">l</field>
+      <field name="description">Joshua Filler is a German professional pool player from Bönen, Germany. In 2018 Filler defeated Carlo Biado 13–10 to win the 2018 WPA World Nine-ball Championship. In 2017 he was the youngest player to win the China Open, and in 2018 he also won the 10-ball European Pool Championships.</field>
+    </record>
+    <record id="object2" model="poolplayer.poolplayer">
+      <field name="name">Dương Quốc Hoàng</field>
+      <field name="dob">1987-01-01</field>
+      <field name="gender">m</field>
+      <field name="country">VietNam</field>
+      <field name="strongHand">r</field>
+      <field name="description">Dương Quốc Hoàng, hay còn được gọi với nickname là Hoàng Sao Hỏa, anh là một tay cơ pool số 1 Việt Nam. Anh đã giành giải vô địch quốc gia 3 năm liên tiếp và trở thành đại diện cho ĐT Việt Nam tham dự các giải Vô địch thế giới, World Cup of Pool. Trong vòng 1 tháng gần đây, anh cũng thường xuyên vô địch các giải trong nước, điển hình như giải APLUS Cup of Pool, KF Pool July, giành ngôi Á quân giải Bảo Đạt...</field>
+    </record>
+
+
+  </data>
+</odoo>
